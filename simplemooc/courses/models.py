@@ -25,3 +25,6 @@ class Course(models.Model):
     updated_at = models.DateTimeField('Atualizado em', auto_now=True)
 
     objects = CourseManager()
+
+    def __str__(self):
+        return self.name
